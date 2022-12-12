@@ -67,7 +67,9 @@ crazyDiff(25); */
 */
 
 function boundary(n) {
-  if ((Number.isInteger(n) && n >= 20 && n <= 100) || n === 400) {
+  if (typeof n !== "number") {
+    return "Non è stato inserito un numero";
+  } else if ((Number.isInteger(n) && n >= 20 && n <= 100) || n === 400) {
     return true;
   } else {
     return false;
@@ -87,7 +89,6 @@ console.log(boundary(25.5)); */
 */
 
 function epify(strg) {
-  let first = "";
   if (typeof strg !== "string") {
     return "Non è stata inserita una stringa";
   } else if (
@@ -99,9 +100,9 @@ function epify(strg) {
     return "EPICODE " + strg;
   }
 }
-/* console.log(epify("Hi"));
+console.log(epify("Hello"));
 console.log(epify("EPICODE"));
-console.log(epify(1)); */
+console.log(epify(1));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
