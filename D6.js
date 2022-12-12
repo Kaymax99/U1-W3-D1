@@ -191,5 +191,6 @@ function giveMeRandom(n) {
     return rng;
   }
 }
-const eG = giveMeRandom(25);
-console.log(eG);
+
+/* const eG = giveMeRandom(25);
+console.log(eG); */
