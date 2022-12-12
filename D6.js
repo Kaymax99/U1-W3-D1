@@ -100,9 +100,9 @@ function epify(strg) {
     return "EPICODE " + strg;
   }
 }
-console.log(epify("Hello"));
+/* console.log(epify("Hello"));
 console.log(epify("EPICODE"));
-console.log(epify(1));
+console.log(epify(1)); */
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -193,5 +193,5 @@ function giveMeRandom(n) {
   }
 }
 
-/* const eG = giveMeRandom(25);
-console.log(eG); */
+const eG = giveMeRandom(25);
+console.log(eG);

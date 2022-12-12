@@ -30,6 +30,7 @@ function checkArray(n) {
       total = total + rng[i];
       i++;
     } else {
+      console.log(rng[i], "< 5");
       i++;
     }
   }
